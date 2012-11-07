@@ -1,1 +1,1 @@
-= Image2ASCII
+Just next Java image to ASCII conventer
