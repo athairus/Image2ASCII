@@ -76,7 +76,7 @@ public class Image2ASCII
 				}
 				this.output += character;
 			}
-			this.output += "\n\r";
+			this.output += "\n";
 			int percent = (i / height) * 100;
 			if(percent != last_percent)
 			{
