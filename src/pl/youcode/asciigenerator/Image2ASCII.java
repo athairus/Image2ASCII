@@ -19,6 +19,7 @@ public class Image2ASCII {
 	private String output = "";
 
 	public Image2ASCII( File image ) throws IOException {
+
 		this.input_image = ImageIO.read( image );
 		ColorSpace greyscale = ColorSpace.getInstance( ColorSpace.CS_GRAY );
 		ColorConvertOp cco = new ColorConvertOp( greyscale, null );
@@ -28,10 +29,12 @@ public class Image2ASCII {
 	}
 
 	public void save() throws IOException {
+
 		this.save( "result.txt" );
 	}
 
 	public void save( String filename ) throws IOException {
+
 		System.out.println( String.format( "Saving ASCII into file: %s",
 				filename ) );
 		if( this.output.isEmpty() ) {
@@ -45,6 +48,7 @@ public class Image2ASCII {
 	}
 
 	private void generateASCII() {
+
 		System.out.println( "Converting image into ASCII..." );
 		this.output = "";
 		int width = this.output_image.getWidth();
