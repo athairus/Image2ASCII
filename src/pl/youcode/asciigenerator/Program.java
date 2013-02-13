@@ -28,8 +28,11 @@ public class Program {
 					break;
 				}
 				try {
+					
 					Image2ASCII art = new Image2ASCII( new File( filename ) );
-					art.save();
+					art.setBorder( true );
+					art.save( "result.txt", 50, (int)( 50 * ( 7.0 / 12.0 ) ) );
+
 				} catch ( IOException e ) {
 					System.out.println( String.format( "Error: %s",
 							e.getLocalizedMessage() ) );

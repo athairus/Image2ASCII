@@ -24,3 +24,10 @@ local.properties
 
 # PDT-specific
 .buildpath
+
+# Test images
+*.jpg
+*.png
+
+# Output files
+result.txt
